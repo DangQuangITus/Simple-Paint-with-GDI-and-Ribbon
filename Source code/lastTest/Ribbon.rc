@@ -1,0 +1,66 @@
+// ******************************************************************************
+// * This is an automatically generated file containing the ribbon resource for *
+// * your application.                                                          *
+// ******************************************************************************
+
+#include ".\RibbonIDs.h"
+
+STRINGTABLE 
+BEGIN
+    cmdTabShape_LabelTitle_RESID L"Shapes" /* LabelTitle cmdTabShape_LabelTitle_RESID: Tab Shapes */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupShape_LabelTitle_RESID L"Shapes" /* LabelTitle cmdGroupShape_LabelTitle_RESID: Group Shapes */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_LINE_LabelTitle_RESID L"Line" /* LabelTitle IDC_CMD_LINE_LabelTitle_RESID: Button Line */
+END
+
+IDC_CMD_LINE_LargeImages_RESID    BITMAP    "res\\line.bmp" /* LargeImages IDC_CMD_LINE_LargeImages_RESID: Button Line */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_RECTANGLE_LabelTitle_RESID L"Rectangle" /* LabelTitle IDC_CMD_RECTANGLE_LabelTitle_RESID: Button Rectangle */
+END
+
+IDC_CMD_RECTANGLE_LargeImages_RESID    BITMAP    "res\\rectangle.bmp" /* LargeImages IDC_CMD_RECTANGLE_LargeImages_RESID: Button Rectangle */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_ELIPPSE_LabelTitle_RESID L"Elippse" /* LabelTitle IDC_CMD_ELIPPSE_LabelTitle_RESID: Button Ellippse */
+END
+
+IDC_CMD_ELIPPSE_LargeImages_RESID    BITMAP    "res\\elippse.bmp" /* LargeImages IDC_CMD_ELIPPSE_LargeImages_RESID: Button Ellippse */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_NEW_LabelTitle_RESID L"New" /* LabelTitle IDC_CMD_NEW_LabelTitle_RESID: New button */
+END
+
+IDC_CMD_NEW_LargeImages_RESID    IMAGE    "res\\NewL.png" /* LargeImages IDC_CMD_NEW_LargeImages_RESID: New button */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_SAVE_LabelTitle_RESID L"Save" /* LabelTitle IDC_CMD_SAVE_LabelTitle_RESID: Button Save */
+END
+
+IDC_CMD_SAVE_LargeImages_RESID    IMAGE    "res\\SaveL.png" /* LargeImages IDC_CMD_SAVE_LargeImages_RESID: Button Save */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_OPEN_LabelTitle_RESID L"Open" /* LabelTitle IDC_CMD_OPEN_LabelTitle_RESID: Open button */
+END
+
+IDC_CMD_OPEN_LargeImages_RESID    IMAGE    "res\\OpenL.png" /* LargeImages IDC_CMD_OPEN_LargeImages_RESID: Open button */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_EXPORT_LabelTitle_RESID L"Export" /* LabelTitle IDC_CMD_EXPORT_LabelTitle_RESID: Export button */
+END
+
+IDC_CMD_EXPORT_LargeImages_RESID    IMAGE    "res\\ExportL.png" /* LargeImages IDC_CMD_EXPORT_LargeImages_RESID: Export button */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_EXIT_LabelTitle_RESID L"Exit" /* LabelTitle IDC_CMD_EXIT_LabelTitle_RESID: Dummy exit command */
+END
+
+IDC_CMD_EXIT_LargeImages_RESID    BITMAP    "res\\ExitL.bmp" /* LargeImages IDC_CMD_EXIT_LargeImages_RESID: Dummy exit command */
+APPLICATION_RIBBON    UIFILE    "Ribbon.bml"

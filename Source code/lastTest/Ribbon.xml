@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!--
+// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+// THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+// PARTICULAR PURPOSE.
+//
+// Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+
+<Application xmlns='http://schemas.microsoft.com/windows/2009/Ribbon'>
+  <!-- Commands section -->
+
+  <Application.Commands>
+
+    <Command Name="cmdTabShape" Comment="Tab Shapes">
+      <Command.LabelTitle>
+        <String Id="200">Shapes</String>
+      </Command.LabelTitle>
+    </Command>
+
+
+    <Command Name="cmdGroupShape" Comment="Group Shapes">
+      <Command.LabelTitle>
+        <String Id="202">Shapes</String>
+      </Command.LabelTitle>
+    </Command>
+
+
+
+    <Command Name="cmdLine" Comment="Button Line" Symbol="IDC_CMD_LINE" Id="30001">
+      <Command.LabelTitle>
+        <String Id="203">Line</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Id="251">res/line.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+
+    <Command Name="cmdRectangle" Comment="Button Rectangle" Symbol="IDC_CMD_RECTANGLE" Id="30003">
+      <Command.LabelTitle>
+        <String Id="205">Rectangle</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Id="253">res/rectangle.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+
+    <Command Name="cmdElippse" Comment="Button Ellippse" Symbol="IDC_CMD_ELIPPSE" Id="30002">
+      <Command.LabelTitle>
+        <String Id="204">Elippse</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Id="252">res/elippse.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+
+    
+    <Command Name="cmdQAT" Symbol="ID_QAT" Id="40000"/>
+    <!--QUICK ACCESS TOOLBAR-->
+    <Command Name="cmdCustomizeQAT" Symbol="ID_CUSTOM_QAT" Id="40001"/>
+    <Command Name="cmdFileMenu" Comment="The application menu anchor"/>
+
+    <Command Name="cmdNew" Comment="New button" Symbol="IDC_CMD_NEW" Id="30006">
+      <Command.LabelTitle>
+        <String Id="208">New</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Id="256">res/NewL.png</Image>
+      </Command.LargeImages>
+    </Command>
+
+
+    <Command Name="cmdSave" Comment="Button Save" Symbol="IDC_CMD_SAVE" Id="30004">
+      <Command.LabelTitle>
+        <String Id="206">Save</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Id="254">res/SaveL.png</Image>
+      </Command.LargeImages>
+    </Command>
+
+
+    <Command Name="cmdOpen" Comment="Open button" Symbol="IDC_CMD_OPEN" Id="30005">
+      <Command.LabelTitle>
+        <String Id="207">Open</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Id="255">res/OpenL.png</Image>
+      </Command.LargeImages>
+    </Command>
+
+
+    <Command Name="cmdExport" Comment="Export button" Symbol="IDC_CMD_EXPORT" Id="30007">
+      <Command.LabelTitle>
+        <String Id="209">Export</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image Id="257">res/ExportL.png</Image>
+      </Command.LargeImages>
+    </Command>
+
+
+    <Command Name="cmdExit" Comment="Dummy exit command" Symbol="IDC_CMD_EXIT" Id="30008">
+      <Command.LabelTitle>Exit</Command.LabelTitle>
+      <Command.LargeImages>
+        <Image>res/ExitL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+  </Application.Commands>
+
+
+  <Application.Views>
+    <Ribbon>
+
+      <Ribbon.ApplicationMenu>
+        <ApplicationMenu CommandName="cmdFileMenu">
+          <MenuGroup Class="MajorItems">
+            <Button CommandName="cmdNew" />
+            <Button CommandName="cmdSave" />
+            <Button CommandName="cmdOpen" />
+            <Button CommandName="cmdExport" />
+            <Button CommandName="cmdExit" />
+          </MenuGroup>
+        </ApplicationMenu>
+      </Ribbon.ApplicationMenu>
+
+      <Ribbon.Tabs>
+        <Tab CommandName="cmdTabShape">
+          <Tab.ScalingPolicy>
+            <ScalingPolicy>
+              <ScalingPolicy.IdealSizes>
+                <Scale Group="cmdGroupShape" Size="Large" />
+              </ScalingPolicy.IdealSizes>
+              <!-- This describes the order and how the groups shrink when the window is
+              resized. -->
+              <Scale Group="cmdGroupShape" Size="Popup" />
+            </ScalingPolicy>
+          </Tab.ScalingPolicy>
+          <Group CommandName="cmdGroupShape" SizeDefinition="ThreeButtons">
+            <ToggleButton CommandName="cmdLine" />
+            <ToggleButton CommandName="cmdRectangle" />
+            <ToggleButton CommandName="cmdElippse" />
+          </Group>
+        </Tab>
+      </Ribbon.Tabs>
+      <Ribbon.QuickAccessToolbar>
+        <QuickAccessToolbar CommandName="cmdQAT" CustomizeCommandName="cmdCustomizeQAT">
+          <QuickAccessToolbar.ApplicationDefaults>
+            <Button CommandName="cmdSave" />
+            <Button CommandName="cmdNew" />
+            <Button CommandName="cmdOpen" />
+            <Button CommandName="cmdExport" ApplicationDefaults.IsChecked ="false"/>
+          </QuickAccessToolbar.ApplicationDefaults>
+        </QuickAccessToolbar>
+      </Ribbon.QuickAccessToolbar>
+    </Ribbon>
+  </Application.Views>
+</Application>
