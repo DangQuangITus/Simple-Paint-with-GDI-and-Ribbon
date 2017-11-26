@@ -8,13 +8,13 @@
 
 ### Các Chức năng Đã Làm Được ###
 #### Các yêu cầu cơ bản ####
- ##### GDI+ #####
+##### GDI+ #####
 - Vẽ các đường thẳng (line), hình elippse, hình tròn, vuông, chữ nhật bằng hàm Draw* trong thư viện GDI+
 - nếu vẽ hình chữ nhật và bấm phím shift sẽ chuyển sang hình vuông, và thả ra sẽ quay lại thành hình chữ nhật
 - Nếu vẽ hình elippse và nhấn shift sẽ chuyển thành hình tròn, thả shift sẽ quay lại thành hình elippse
 - Mặc định chưa chỉ định nét vẽ, chưa chỉ định màu vẽ, chưa chỉ định màu tô, loại chổi tô, các thuộc tính này được gán cố định
 
- ##### Ribbon #####
+##### Ribbon #####
 - Tạo menu file với các chức năng Save, Open, New, Exit bằng ribbon MenuApplication
 - Tạo tab Shapes với các chức năng vẽ đường thẳng, hình chữ nhật/hình vuông, đường ellipse/đường tr
 - Tạo Quick eccess toolbar với các label mặc định là save, new, open
